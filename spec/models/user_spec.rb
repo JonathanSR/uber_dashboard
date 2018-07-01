@@ -36,6 +36,6 @@ RSpec.describe User, type: :model do
     expect(new_user.last_name).to eq("Serrano")
     expect(new_user.token).to eq("ABCDEF...")
     expect(new_user.refresh_token).to eq("ABCDEF...")
-    expect(ew_user.expires).to eq(auth[:credentials][:expires])
+    expect(new_user.expires).to eq(auth[:credentials][:expires])
   end
 end
