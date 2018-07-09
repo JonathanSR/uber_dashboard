@@ -6,7 +6,7 @@ RSpec.feature "user logs in" do
     visit root_path
     expect(page).to have_link("Sign in with Uber")
     click_link "Sign in with Uber"
-    expect(page).to have_content("Jonathan Serrano")
+    expect(page).to have_content("Jonathan")
     expect(page).to have_link("Logout")
   end
 
