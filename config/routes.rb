@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get "logout",                  to: "sessions#destroy"
   
   root to: 'welcome#show'
+
+  resource :dashboards, only: [:show]
 end
